@@ -14,7 +14,7 @@ const _getTokenDataOfUserType = async (req, userTypeIdEntered) => {
     };
 
     // No need to go further if we don't have any authorization headers provided
-    if (!req.headers.authorization) return 'responseData';
+    if (!req.headers.authorization) return responseData;
 
     // Get the token
     const token = (req.headers.authorization.split(" "))[1];
