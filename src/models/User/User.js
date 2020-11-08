@@ -34,7 +34,7 @@ User.init(
       allowNull: true,
     },
     otp: {
-      type: DataTypes.STRING(6),
+      type: DataTypes.STRING(256),
       allowNull: true,
     },
     lastOtpSentAt: {
